@@ -109,14 +109,16 @@ body {
     border-radius: 4px;
 }
 
-.card-title {
+.card-title a {
+    text-decoration: none;
+    color: var(--grey-950);
     /* 20px -> 24px */
     font-size: clamp(var(--font-fs-lg), 5.3vw, var(--font-fs-xl));
 }
 
 @media (hover: hover) {
     /* Only apply when hover is supported */
-    .card-title:hover {
+    .card-title a:hover {
         color: var(--yellow);
         cursor: pointer;
     }
