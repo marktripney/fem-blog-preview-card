@@ -35,9 +35,11 @@ img {
     --grey-950: #111;
     --white: #fff;
     /* Typography: Font sizes */
+    --font-fs-xs: 0.75rem;
     --font-fs-sm: 0.875rem;
     --font-fs-md: 1rem;
-    --font-fs-lg: 1.5rem;
+    --font-fs-lg: 1.25rem;
+    --font-fs-xl: 1.5rem;
     /* Typography: Font weights */
     --font-fw-md: 500;
     --font-fw-xb: 800;
@@ -76,10 +78,45 @@ body {
     background-color: var(--white);
     padding: 1.5rem;
     border-radius: 20px;
+    width: clamp(327px, 87.2vw, 384px);
+    color: var(--grey-950);
+}
+
+.card-main-img,
+.card-category,
+.card-pub-date,
+.card-title {
+    margin-bottom: var(--spacing-150);
+}
+
+.card-category,
+.card-pub-date {
+    /* 12px -> 14px */
+    font-size: clamp(var(--font-fs-xs), 3.2vw, var(--font-fs-sm));
 }
 
 .card-main-img {
     border-radius: 10px;
+    margin-bottom: var(--spacing-300);
+}
+
+.card-category {
+    display: inline-block;
+    background-color: var(--yellow);
+    padding: var(--spacing-50) var(--spacing-150);
+    border-radius: 4px;
+}
+
+.card-title {
+    /* 20px -> 24px */
+    font-size: clamp(var(--font-fs-lg), 5.3vw, var(--font-fs-xl));
+}
+
+.card-description {
+    color: var(--grey-500);
+    margin-bottom: var(--spacing-300);
+    /* 14px -> 16px */
+    font-size: clamp(var(--font-fs-sm), 3.7vw, var(--font-fs-md));
 }
 
 .footer-card {
