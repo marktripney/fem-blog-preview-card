@@ -112,6 +112,14 @@ body {
     font-size: clamp(var(--font-fs-lg), 5.3vw, var(--font-fs-xl));
 }
 
+@media (hover: hover) {
+    /* Only apply when hover is supported */
+    .card-title:hover {
+        color: var(--yellow);
+        cursor: pointer;
+    }
+}
+
 .card-description {
     color: var(--grey-500);
     margin-bottom: var(--spacing-300);
