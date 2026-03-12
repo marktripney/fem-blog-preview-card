@@ -80,6 +80,8 @@ body {
     border-radius: 20px;
     width: clamp(327px, 87.2vw, 384px);
     color: var(--grey-950);
+    border: solid 1px var(--grey-950);
+    box-shadow: #000 8px 8px;
 }
 
 .card-main-img,
